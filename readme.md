@@ -17,6 +17,26 @@ This repository contains all the files and scripts used for building a cricket s
 - **`to day.csv`**: Normalized player statistics for the current day, generated as part of the pipeline.
 
 ---
+## Part 0: Validation and Extensions
+
+### 1. Validation
+- **Scripts**:
+  - **`test.py` & `test2.py`**:
+    - Validate the predictive model's outputs using real-world cricket data.
+    - Ensure predictions align with actual outcomes from historical matches.
+- **Methods**:
+  - Compare predicted scores with actual scores using statistical metrics.
+  - Generate confusion matrices and residual plots to identify areas for improvement.
+
+### 2. Possible Extensions
+- **Win Probability Model**:
+  - Combine predicted scores with historical win rates to calculate the probability of a team's victory.
+  - Initial results indicate 85% accuracy.
+- **Player Value Model**:
+  - Generate player rankings based on performance metrics.
+  - Use rankings to identify key contributors and strategize team compositions.
+
+---
 
 ## Part 1: Data Engineering
 
@@ -94,26 +114,6 @@ This repository contains all the files and scripts used for building a cricket s
 
 ---
 
-## Part 3: Validation and Extensions
-
-### 1. Validation
-- **Scripts**:
-  - **`test.py` & `test2.py`**:
-    - Validate the predictive model's outputs using real-world cricket data.
-    - Ensure predictions align with actual outcomes from historical matches.
-- **Methods**:
-  - Compare predicted scores with actual scores using statistical metrics.
-  - Generate confusion matrices and residual plots to identify areas for improvement.
-
-### 2. Possible Extensions
-- **Win Probability Model**:
-  - Combine predicted scores with historical win rates to calculate the probability of a team's victory.
-  - Initial results indicate 85% accuracy.
-- **Player Value Model**:
-  - Generate player rankings based on performance metrics.
-  - Use rankings to identify key contributors and strategize team compositions.
-
----
 
 ## Conclusion
 
